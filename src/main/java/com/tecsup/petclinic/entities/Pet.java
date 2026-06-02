@@ -37,10 +37,9 @@ public class Pet {
 	private Date birthDate;
 
 
-	@OneToMany(mappedBy = "pet", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@ToString.Exclude
-	//@EqualsAndHashCode.Exclude
-	private Set<Visit> visits;
+	//@OneToMany(mappedBy = "pet", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	//@ToString.Exclude
+	//private Set<Visit> visits;
 
 //	@ManyToOne(fetch = FetchType.LAZY)
 //	@JoinColumn(name = "type_id")
